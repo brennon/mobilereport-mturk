@@ -6,6 +6,7 @@ gem 'rails', '3.0.10'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'ruby-aws'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,4 +30,6 @@ gem 'sqlite3'
 group :development, :test do
 #   gem 'webrat'
 	gem 'rspec-rails'
+  gem 'autotest-rails'
+  gem 'autotest-growl'
 end

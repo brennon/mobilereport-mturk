@@ -24,7 +24,7 @@ describe ScriptsController do
   # Script. As you add validations to Script, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {:body => "This is the script body."}
   end
 
   describe "GET index" do
