@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Gender:</b>
+  <%= @recording.gender %>
+</p>
+
+<p>
+  <b>Locale:</b>
+  <%= @recording.locale %>
+</p>
+
+<p>
+  <b>Soundfile file name:</b>
+  <%= @recording.soundfile_file_name %>
+</p>
+
+<p>
+  <b>Soundfile content type:</b>
+  <%= @recording.soundfile_content_type %>
+</p>
+
+<p>
+  <b>Soundfile updated at:</b>
+  <%= @recording.soundfile_updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_recording_path(@recording) %> |
+<%= link_to 'Back', recordings_path %>

@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831221922) do
+ActiveRecord::Schema.define(:version => 20110904150710) do
+
+  create_table "recordings", :force => true do |t|
+    t.string   "gender"
+    t.string   "locale"
+    t.string   "soundfile_file_name"
+    t.string   "soundfile_content_type"
+    t.datetime "soundfile_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "script_id"
+  end
 
   create_table "scripts", :force => true do |t|
     t.text     "body"

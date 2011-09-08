@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
-  <Question>
-   <QuestionIdentifier>1</QuestionIdentifier>
-   <DisplayName>Recording Transcription</DisplayName>
-   <IsRequired>true</IsRequired>
-   <QuestionContent>
-    <Text>Please provide an accurate transcription of the attached audio recording.</Text>
-    <Binary>
-	    <MimeType>
-		    <Type>audio</Type>
-	    </MimeType>
-	    <DataURL>http://http://www.wavsource.com/snds_2011-08-28_3529072516442406/movies/caddyshack/wanna_get_high.wav</DataURL>
-	    <AltText>Sorry, this sound file is currently unavailable.</AltText>
-		</Binary>
-   </QuestionContent>
-   <AnswerSpecification>
-     <FreeTextAnswer/>
-   </AnswerSpecification>
-  </Question>
+	<Question>
+		<QuestionIdentifier>1</QuestionIdentifier>
+		<DisplayName>Recording Transcription</DisplayName>
+		<IsRequired>true</IsRequired>
+		<QuestionContent>
+			<Text>Please provide an accurate transcription of the attached audio recording.</Text>
+			<EmbeddedBinary>
+				<EmbeddedMimeType>
+					<Type>audio</Type>
+					<SubType>wav</SubType>
+				</EmbeddedMimeType>
+				<DataURL>http://www.brennonbortz.com/ballsdeep.wav</DataURL>
+				<AltText>Recording for transcription</AltText>
+				<Width>480</Width>
+				<Height>36</Height>
+			</EmbeddedBinary>
+		</QuestionContent>
+		<AnswerSpecification>
+			<FreeTextAnswer/>
+		</AnswerSpecification>
+	</Question>
 </QuestionForm>

@@ -11,3 +11,14 @@ describe Script do
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: scripts
+#
+#  id         :integer         not null, primary key
+#  body       :text
+#  created_at :datetime
+#  updated_at :datetime
+#
+

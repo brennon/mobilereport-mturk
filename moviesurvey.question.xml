@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionForm xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionForm.xsd">
+  <Question>
+   <QuestionIdentifier>1</QuestionIdentifier>
+   <DisplayName>Recording Transcription</DisplayName>
+   <IsRequired>true</IsRequired>
+   <QuestionContent>
+    <Text>Please provide an accurate transcription of the attached audio recording.</Text>
+    <EmbeddedBinary>
+	    <EmbeddedMimeType>
+		    <Type>audio</Type>
+	    </EmbeddedMimeType>
+			<DataURL>http://www.brennonbortz.com/leoithne.aiff</DataURL>
+			<Width>300</Width>
+			<Height>120</Height>
+			<AltText>Alternate text...</AltText>
+		</EmbeddedBinary>
+   </QuestionContent>
+   <AnswerSpecification>
+     <FreeTextAnswer/>
+   </AnswerSpecification>
+  </Question>
+</QuestionForm>

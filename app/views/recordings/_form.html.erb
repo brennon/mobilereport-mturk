@@ -1,0 +1,32 @@
+<%= form_for @recording, :as => :recording, :url => recordings_path, :html => { :multipart => true } do |f| %>
+  <% if @recording.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recording.errors.count, "error") %> prohibited this recording from being saved:</h2>
+
+      <ul>
+      <% @recording.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= select :recording, :gender, Recording::GENDERS, :include_blank => 'Select a Gender' %>
+  </div>
+  <div class="field">
+    <%= f.label :locale %><br />
+    <%= f.text_field :locale %>
+  </div>
+  <div class="field">
+    <%= f.label :soundfile, "Sound File" %><br />
+    <%= f.file_field :soundfile %>
+  </div>
+  <div class="field-hidden">
+    <%= f.hidden_field :script_id, :value => @script.id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

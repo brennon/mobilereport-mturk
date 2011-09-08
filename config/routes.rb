@@ -1,4 +1,5 @@
 MobilereportMturk::Application.routes.draw do
+  resources :recordings
   resources :scripts
 
   # The priority is based upon order of creation:

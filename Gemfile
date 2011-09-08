@@ -7,6 +7,7 @@ gem 'rails', '3.0.10'
 
 gem 'sqlite3'
 gem 'ruby-aws'
+gem 'paperclip', '~> 2.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -32,4 +33,8 @@ group :development, :test do
 	gem 'rspec-rails'
   gem 'autotest-rails'
   gem 'autotest-growl'
+  gem 'annotate'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'webrat'
 end
